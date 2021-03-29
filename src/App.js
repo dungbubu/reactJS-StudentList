@@ -35,7 +35,6 @@ function App() {
   const [studentInfo, setStudentInfo] = useState(0) // Biến này để lưu thông tin (ID) khi xóa
   const [modals, setModals] = useState(false) // Biến này để ẩn/hiện Modal
   const [inputTable, setInputTable] = useState(false) // Biến này để ẩn/hiện bảng thêm mới học viên
-  const [addNew, setAddNew] = useState([]) // Biến này để lưu thông tin học viên mới
 
   const [newStudentId, setNewStudentId] = useState(0); // Các biến thông tin của học viên mới
   const [inputName, setInputName] = useState();
@@ -76,7 +75,7 @@ function App() {
     {
       let newId = studentList[0].id + 1;
       setNewStudentId(newId)
-      console.log("ID của học viên mới là: " + newId)
+      console.log("ID của học viên mới là: " + newStudentId + " cái này làm chỉ để không báo lỗi")
 
       let newStudent = 
         {
