@@ -73,13 +73,12 @@ function App() {
     }
   function addData() // Đây là nút Ok
     {
-      let newId = studentList[0].id + 1;
-      setNewStudentId(newId)
-      console.log("ID của học viên mới là: " + newStudentId + " cái này làm chỉ để không báo lỗi")
+      let newID = studentList[0].id+1;
+      setNewStudentId(newID)
 
       let newStudent = 
         {
-          id: newId,
+          id: newID,
           name : inputName,
           dob : inputDob,
           email : inputEmail,
