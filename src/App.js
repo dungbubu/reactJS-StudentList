@@ -36,7 +36,7 @@ function App() {
   const [modals, setModals] = useState(false) // Biến này để ẩn/hiện Modal
   const [inputTable, setInputTable] = useState(false) // Biến này để ẩn/hiện bảng thêm mới học viên
 
-  const [newStudentId, setNewStudentId] = useState(0); // Các biến thông tin của học viên mới
+  const [newStudentId, setNewStudentId] = useState(3); // Các biến thông tin của học viên mới
   const [inputName, setInputName] = useState();
   const [inputDob, setInputDob] = useState();
   const [inputEmail, setInputEmail] = useState();
@@ -73,7 +73,7 @@ function App() {
     }
   function addData() // Đây là nút Ok
     {
-      let newID = studentList[0].id+1;
+      let newID = newStudentId + 1;
       setNewStudentId(newID)
 
       let newStudent = 
